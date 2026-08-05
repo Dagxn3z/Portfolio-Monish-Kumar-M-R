@@ -3,9 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolip | Monish Kumar M R</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="keywords" content="Monish Kumar M R, Portfolio, Web Developer, React, Node.js, JavaScript, HTML, CSS, Freelance Developer">
+    <meta name="author" content="Monish Kumar M R">
+    <title>My Portfolio | Monish Kumar M R</title>
+    <!-- Open Graph Meta Tags for Social Media Sharing -->
+    <meta property="og:title" content="My Portfolio | Monish Kumar M R">
+    <meta property="og:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta property="og:image" content="picture/profile.jpg">
+    <meta property="og:url" content="[Your Portfolio URL]">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Portfolio | Monish Kumar M R">
+    <meta name="twitter:description" content="Full stack developer specializing in React, Node.js, and modern web technologies. Available for freelance projects and collaborations.">
+    <meta name="twitter:image" content="picture/profile.jpg">
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="picture/profile.jpg" alt="Favicon">
 </head>
 <body>
-<h1>Hello World </h1>  
+        <!-- NAVIGATION -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+ 
+    <!-- HERO SECTION -->
+    <header>
+        <h1>Hi, I'm Monish Kumar M R</h1>
+        <p>I'm a learning web developer currently from Bangalore</p>
+        <a href="#contact">Hire Me But Dont Fire Me</a>
+    </header>
+ 
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About Me</h2>
+        <figure class="profile-figure">
+                    <img src="picture/profile.jpg" alt="Monish Kumar M R profile photo" width="300">
+                    <figcaption>Monish Kumar M R — Web Developer</figcaption>
+                </figure>
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React, Recode GS</li>
+            <li>Python</li>
+            <li>C</li>
+        </ul>
+    </section>
+ 
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Created a responsive website using HTML, CSS, and JavaScript. using vs code and Git Hub</p>
+            <a href="#">View Project</a>
+            <!--Embed YouTube Video (iframe)-->
+            <iframe width="600" height="300" src="https://www.youtube.com/embed/XN-CqZ3g0Ks?si=rK1957AmMrgaxmcZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     </div>
+    </section>
+ 
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project in mind? Let's talk!</p>
+    
+    <!-- Password Input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="4">
+ 
+    <!-- Number Input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="100">
+
+    <!-- Phone Number Input -->
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="9876543210" required>
+
+    <!-- Dropdown Select -->
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+        <option value="">-- Choose Country --</option>
+        <option value="in">India</option>
+        <option value="us">United States</option>
+        <option value="uk">United Kingdom</option>
+    </select>
+
+    <!-- Radio Buttons (choose ONE) -->
+    <p>Experience Level:</p>
+     <input type="radio" id="noob" name="level" value="noob">
+    <label for="noob">Noob</label>
+    <input type="radio" id="beginner" name="level" value="beginner">
+    <label for="beginner">Beginner</label>
+    <input type="radio" id="intermediate" name="level" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+    
+
+    <!-- Checkboxes (choose MANY) -->
+    <p>skills:</p>
+    <input type="checkbox" id="html" name="tech" value="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="tech" value="css">
+    <label for="css">CSS</label>
+    <input type="checkbox" id="Python" name="tech" value="Python">
+    <label for="Python">Python</label>
+    <input type="checkbox" id="C/C++" name="tech" value="C/C++">
+    <label for="C/C++">C/C++</label>
+ 
+ 
+    <form action="#" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+ 
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+               <label for="subject">Subject</label>
+        <select id="subject" name="subject">
+            <option value="">-- Select a topic --</option>
+            <option value="hire">I want to hire you</option>
+            <option value="collab">I want to collaborate</option>
+            <option value="other">Other</option>
+        </select>
+ 
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="2"
+                  placeholder="Tell me about your project..." required></textarea>
+ 
+        <button type="submit">Send Message :></button>
+    </form>
+</section>
+ 
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Monish Kumar M R. All rights reserved.</p>
+    </footer>
+ 
 </body>
 </html>
+ 
+ 
